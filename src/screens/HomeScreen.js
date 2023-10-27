@@ -5,6 +5,8 @@ import { MagnifyingGlassIcon } from 'react-native-heroicons/outline'
 import { TextInput } from 'react-native-gesture-handler';
 import { TapGestureHandler,GestureHandlerRootView } from 'react-native-gesture-handler';
 import Categories from '../components/Categories';
+import SortCategories from '../components/SortCategories';
+import Destination from '../components/Destination';
 const ios = Platform.OS=='ios';
 const topMargin = ios? 'mt-3': 'mt-10';
 const HomeScreen = () => {
@@ -36,6 +38,12 @@ const HomeScreen = () => {
         {/* CATEGORIES */}
       <View className='mb-4'>
         <Categories />
+      </View>
+      <View className='mb-4'>
+        <SortCategories />
+      </View>
+      <View className='mb-4'>
+        <Destination />
       </View>
       </ScrollView>
     </SafeAreaView>
